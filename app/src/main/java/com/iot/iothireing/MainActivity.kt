@@ -151,17 +151,17 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    override fun onConfigurationChanged(newConfig: Configuration) {
-        super.onConfigurationChanged(newConfig)
-
-        // Checks the orientation of the screen
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            Toast.makeText(this, "Failed to update the session,landscape", Toast.LENGTH_SHORT).show()
-            clearData()
-        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            Toast.makeText(this, " Failed to update the session, portrait", Toast.LENGTH_SHORT).show()
-        }
-    }
+//    override fun onConfigurationChanged(newConfig: Configuration) {
+//        super.onConfigurationChanged(newConfig)
+//
+//        // Checks the orientation of the screen
+//        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+//            Toast.makeText(this, "Failed to update the session,landscape", Toast.LENGTH_SHORT).show()
+//            clearData()
+//        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+//            Toast.makeText(this, " Failed to update the session, portrait", Toast.LENGTH_SHORT).show()
+//        }
+//    }
 
     private fun clearData() {
 //        model?.text1 = "0"
